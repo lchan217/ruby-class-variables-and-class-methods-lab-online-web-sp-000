@@ -62,8 +62,14 @@ class Song
 def self.artist_count
   result = {}
   counter = 0 
+<<<<<<< HEAD
   @@artists.reverse.each do |artist|
     if !result[artist]
+=======
+  @@artists.each do |genre, artist|
+    binding.pry
+    if result[artist]
+>>>>>>> 2a73fe63203fd0d37383fcdeb9ca622e83742b58
       counter+=1 
       result[artist] = counter 
     else 
